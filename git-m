@@ -39,9 +39,9 @@ if [ "0$DEBUG" -eq 1 ]; then
 fi
 
 usage () {
-    echo -n "git macro <option> <macro> \
-\nmacro:\
-\n co <order> if order is \
+    echo -n "git macro <option> <args> \
+\noption:\
+\n co <order> if order is the following one\
 \n  default: list branch order \
 \n  0: checkout next release branch \
 \n  n: checkout specific order branch \
