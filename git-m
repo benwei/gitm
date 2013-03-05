@@ -63,6 +63,10 @@ show_branch_list_with_order () {
         echo "[$n] $i"
         n=$((n + 1))
     done
+
+    if [ "$n" -eq 1 ]; then
+        echo "[0] $next_dev_branchname"
+    fi
     return 0
 }
 
