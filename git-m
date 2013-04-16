@@ -108,6 +108,13 @@ gitm_version ()
     return 0
 }
 
+# main
+
+if ! git rev-parse --git-dir >/dev/null 2>&1; then
+    echo "fatal: Not a git repository (or any of the parent directories): .git"
+    exit 1
+fi
+
 opt="$1"
 case $opt in
 co|checkout)
