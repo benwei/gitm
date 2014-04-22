@@ -1,5 +1,5 @@
 ## Abstract
-This is a simple script to archive less keyboard input while using git and git flow.
+This is a simple script to type without full branch name while using git flow.
 
 ## Install
 * Preparation
